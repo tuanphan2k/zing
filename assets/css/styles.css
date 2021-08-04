@@ -666,8 +666,11 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .left-side__info p {
-    vertical-align: baseline;
+  .left-side__info p, .right-side__contact p {
+    text-align: center;
+  }
+  .right-side__contact {
+    width: 100%;
   }
 }
 
