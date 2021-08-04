@@ -540,7 +540,7 @@ html {
   padding-top: 40px;
   width: 320px;
   max-width: 100%;
-  background-color: rgb(14 13 29);
+  background-color: #f7f7f7;
   transform: translateX(-100%);
   opacity: 0;
   transition: all linear 0.2s;
@@ -553,12 +553,25 @@ html {
   text-align: center;
 }
 
+.navbar__item--mobile:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.navbar__title--mobile {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0;
+}
+
 .navbar__icon-close {
   position: absolute;
   right: 30px;
   top: 16px;
   font-size: 2rem;
-  color: #ddd;
+  color: #888;
   cursor: pointer;
 }
 
@@ -571,15 +584,7 @@ html {
   text-decoration: none;
   color: var(--text-color);
   font-size: 2rem;
-  color: #ddd;
-}
-
-.navbar__item--mobile a::before {
-  content: "/";
-  position: absolute;
-  left: -20px;
-  top: 5px;
-  color: #dd3333;
+  color: #888;
 }
 
 .navbar__bars--input:checked~.navbar__overlay {
@@ -671,6 +676,12 @@ html {
   }
   .right-side__contact {
     width: 100%;
+  }
+  .content-news__list-news .list-news__item--sumary {
+    display: none;
+  }
+  .list-news__item {
+    height: auto;
   }
 }
 
